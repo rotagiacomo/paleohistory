@@ -1,2 +1,0 @@
-# paleohistory
-progetto Paleohistory
