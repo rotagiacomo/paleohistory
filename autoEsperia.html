@@ -1,56 +1,108 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="autoEsperia.css">
-        <title>Auto Esperia</title>
+
+    <title>Auto Esperia</title>
 </head>
+
 <body>
-    <div class="safe-area spaced-column">
-        
-        <nav>
-            <div class="logo"><a href="./autoEsperia.html">Esperia</a></div>
-            <div class="menu">
-                <a class="menu-item" href="./autoEsperia.html">Home</a>
-                <a class="menu-item" href="./autoEsperia.html">Storia</a>
-                <a class="menu-item active" href="./autoEsperia.html">Auto Esperia</a>                
-                <a class="menu-item" href="./autoEsperia.html">Curiosità</a>
-            </div>
-        </nav>
+    <div class="safe-area">
 
-        <div class="content">
-            <div class="testo-principale">
-                <h3>L'auto Esperia</h3>
-               <h4> L'auto "Esperia" è stata un prodotto importante della Società Automobili Lombarda (S.A.L.), un'azienda che ha operato a Bergamo nel primo Novecento. 
-                 La S.A.L. nacque con l’intento di sviluppare e produrre automobili di qualità, destinate a un mercato che stava rapidamente evolvendo grazie alla crescente domanda di mezzi di trasporto motorizzati.
-                  Nonostante non sia diventata un grande successo commerciale, l'auto Esperia ha comunque un posto di rilievo nella storia automobilistica italiana.</h4>
+        <header class="hero">
+            <div class="hero-content">
+                <div class="logo">
+                    <a href="./autoEsperia.html">Esperia</a>
+                </div>
+                <nav class="menu">
+                    <a class="menu-item" href="./autoEsperia.html">Home</a>
+                    <a class="menu-item" href="./autoEsperia.html">About</a>
+                    <a class="menu-item active" href="./autoEsperia.html">Esperia Cars</a>
+                    <a class="menu-item" href="./autoEsperia.html">Features</a>
+                    <a class="menu-item" href="./autoEsperia.html">Contact</a>
+                </nav>
             </div>
-                <img class="main-image" src="./assets/Foto Auto Esperia Gara.png" alt="Photo of the esperia car">
-            <div>
+        </header>
+
+
+
+
+        <main class="content">
+            <section class="testo-principale">
+                <h3 class="section-title">L'auto Esperia</h3>
+                <p class="section-text">
+                    L'auto "Esperia" è stata un prodotto importante della Società Automobili Lombarda (S.A.L.),
+                    un'azienda che ha operato a Bergamo nel primo Novecento. La S.A.L. nacque con l’intento di
+                    sviluppare e produrre automobili di qualità, destinate a un mercato che stava rapidamente evolvendo
+                    grazie alla crescente domanda di mezzi di trasporto motorizzati. Nonostante non sia diventata un
+                    grande successo commerciale, l'auto Esperia ha comunque un posto di rilievo nella storia
+                    automobilistica italiana.
+                </p>
+            </section>
+
+
+
+
+            <img class="main-image" src="./assets/Foto Auto Esperia Gara.png" alt="Photo of the Esperia car">
+
+            <section class="componenti-esperia">
                 <h2>Componenti auto Esperia</h2>
-                <h4> testo dato da meccanici</h4>
+                <p>Testo tecnico fornito dai meccanici che descrive i vari componenti dell'auto.</p>
+
+                <div class="disegno-lista">
+                    <img src="./assets/Foto Macchina Esperia PO.jpg" alt="View of the car" class="main-img">
+                    <ul class="lista">
+                        <li>
+                            <a href="./pagesAutoEsperia/elemento1.html" class="list-item">
+                                <img src="./assets/icona_auto.png" alt="Automobile Icon" class="icon">
+                                <span>Elementi automobile</span>
+                            </a>
+                            <p class="descrizione">Scopri tutti gli elementi essenziali della carrozzeria e
+                                dell'estetica dell'auto Esperia.</p>
+                        </li>
+                        <li>
+                            <a href="./pagesAutoEsperia/elemento2.html" class="list-item">
+                                <img src="./assets/icona_motore.jfif" alt="Motor Icon" class="icon">
+                                <span>Elementi trasmissione</span>
+                            </a>
+                            <p class="descrizione">Esplora i dettagli del motore che ha alimentato la potenza della
+                                Esperia.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <h2>Citazioni sull'auto Esperia</h2>
+                <div class="testimonials-container">
+                    <div class="testimonial">
+                        <h4>"L'auto Esperia ha segnato una rivoluzione nel design automobilistico italiano del XX
+                            secolo."</h4>
+                        <p>- Giuseppe Ferrari, Storico dell'auto</p>
+                    </div>
+                    <div class="testimonial">
+                        <h4>"Nonostante le difficoltà, la S.A.L. ha lasciato un segno profondo nel cuore degli
+                            appassionati di motori."</h4>
+                        <p>- Maria Rossi, Esperta di veicoli storici</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Auto Esperia</p>
+                <p class="footer-link"><a href="#">Privacy Policy</a></p>
             </div>
-            <div class="disegno-lista">
-                
-                <img src="Foto Macchina Esperia PO.jpg" alt="Photo of a view">
-                <ul class="lista">
-                    <a href="./pagesAutoEsperia/elemento1.html"><li>elemento1</li></a>
-                    <a href="./pagesAutoEsperia/elemento2.html"><li>elemento2</li></a>
-                    <a href="./pagesAutoEsperia/elemento3.html"><li>elemento3</li></a>
-                </ul>
+        </footer>
 
-            </div>
-
-            </div>
-
-        </div>
-
-        <div class="footer">2025</div>
-
-    </div>    
+    </div>
 </body>
+
 </html>
