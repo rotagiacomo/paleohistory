@@ -257,16 +257,39 @@ nav{
         transform: translate(-50%, -50%);
     }
 }
+
+
+
+
 /* PARTE CURIOSITAIN CSS*/
+/*parte salone*/
 /* Stile per il layout a griglia */
 .row {
     display: flex;
     flex-direction: row; /* Disposizione orizzontale */
+    background-color: #e4e4e4; /* Grigio chiaro sfumato */
+    padding: 20px; /* Spazio interno */
+    border-radius: 8px; /* Bordo arrotondato */
+    box-shadow: inset 0 0 5px rgba(150, 150, 150, 0.1); /* Ombreggiatura interna sottile con tonalità grigia */
+    margin-bottom: 50px; /* Spazio tra le immagini */
+}
+/* Stile per il Salone dell'Automobile di Parigi */
+.row-salone {
+    display: flex;
+    flex-direction: row; /* Disposizione orizzontale */
+    justify-content: space-between; /* Spazio equo tra le colonne */
+    align-items: flex-start; /* Allinea tutto all'inizio verticalmente */
+    background-color: #e4e4e4; /* Grigio chiaro sfumato */
+    padding: 20px; /* Spazio interno */
+    border-radius: 8px; /* Bordo arrotondato */
+    box-shadow: inset 0 0 5px rgba(150, 150, 150, 0.1); /* Ombreggiatura interna sottile */
+    margin-bottom: 50px; /* Spazio tra le immagini */
 }
 
 .text-column {
     flex: 3; /* Occupa 3/5 della larghezza */
     padding-right: 20px; /* Spazio tra il testo e le immagini */
+    text-align: justify;
 }
 
 .image-column {
@@ -279,10 +302,12 @@ nav{
 .image {
     width: 70%; /* Adatta la larghezza delle immagini alla colonna */
     height: auto; /* Mantieni le proporzioni */
-    margin-bottom: 10px; /* Spazio tra le immagini */
+    margin-bottom: 50px; /* Spazio tra le immagini */
 }
 
 
+
+/*circuito brescia*/
 /* Stile per il layout a griglia */
 .row-2 {
     display: flex;
@@ -297,26 +322,90 @@ nav{
     display: flex;
     justify-content: center; /* Centra l'immagine all'interno della colonna */
     align-items: center; /* Centra verticalmente */
+
 }
 
 /* Colonna centrale con testo */
 .text-column-center {
     flex: 3; /* Occupa 3/5 della larghezza */
-    padding: 0 10px; /* Aggiunge spazio tra il testo e le immagini */
+    padding-right: 20px; /* Spazio tra il testo e le immagini */
+    text-align: justify;
 }
 
 /* Colonna con immagine a destra */
 .image-column-right {
     flex: 1; /* Occupa 1/5 della larghezza */
     display: flex;
-    justify-content: center; /* Centra l'immagine all'interno della colonna */
-    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Disposizione verticale delle immagini */
+    align-items: center; /* Centra le immagini orizzontalmente */
+    margin-bottom: 20px; /* Distanza tra le immagini */
 }
 
 /* Stile per le immagini */
-.image-2, .image-3 {
-    width: 100%; /* Adatta la larghezza delle immagini alla colonna */
+.image-2{
+    width: 90%; /* Adatta la larghezza delle immagini alla colonna */
     height: auto; /* Mantieni le proporzioni */
+    border-radius: 12px;
 }
 
+.image-3 {
+    width: 100%; /* Adatta la larghezza delle immagini alla colonna */
+    height: auto; /* Mantieni le proporzioni */
+    margin-bottom: 10px; /* Spazio tra le immagini */
+}
+
+
+/*circuito padova*/
+/* Stile per il layout a griglia */
+.row-2 {
+    display: flex;
+    flex-direction: row; /* Disposizione orizzontale */
+    justify-content: space-between; /* Spazio equo tra le colonne */
+    align-items: flex-start; /* Allinea tutto all'inizio verticalmente */
+    background-color: #e4e4e4; /* Grigio chiaro sfumato */
+    padding: 20px; /* Spazio interno */
+    border-radius: 8px; /* Bordo arrotondato */
+    box-shadow: inset 0 0 5px rgba(150, 150, 150, 0.1); /* Ombreggiatura interna sottile con tonalità grigia */
+    margin-bottom: 50px; /* Spazio tra le immagini */
+}
+
+/* Colonna con immagine a sinistra */
+.image-column-left {
+    flex: 1; /* Occupa 1/5 della larghezza */
+    display: flex;
+    justify-content: center; /* Centra l'immagine all'interno della colonna */
+    align-items: center; /* Centra verticalmente */
+
+}
+
+/* Colonna centrale con testo */
+.text-column-center {
+    flex: 3; /* Occupa 3/5 della larghezza */
+    padding: 0 10px; /* Aggiunge spazio tra il testo e le immagini */
+    text-align: justify;
+
+}
+
+.image-column-right {
+    flex: 1; /* Occupa 1/5 della larghezza */
+    display: flex;
+    flex-direction: column; /* Disposizione verticale delle immagini */
+    align-items: center; /* Centra le immagini orizzontalmente */
+    gap: 70px; /* Spazio tra le immagini */
+}
+
+/* Stile per le immagini */
+.image-4{
+    width: 93%; /* Adatta la larghezza delle immagini alla colonna */
+    height: auto; /* Mantieni le proporzioni */
+    border-radius: 12px;
+    
+}
+
+.titleblock-2 {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    letter-spacing: 3px; /* Aggiunge uno spazio leggero tra le lettere */
+}
 
