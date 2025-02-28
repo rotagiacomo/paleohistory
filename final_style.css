@@ -1005,3 +1005,17 @@ a:focus{
     text-decoration: none;
     color: var(--josh);
 }
+
+.footer-link a {
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease, background-color 0.3s ease;
+}
+
+body, header, footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header.hero, footer {
+    width: 100%;  /* Assicura che entrambi occupino tutta la larghezza disponibile */
+}
