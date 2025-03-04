@@ -264,7 +264,7 @@ footer::after {
 /* Corpo della pagina */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f4f4f4; /* Colore chiaro di sfondo per la pagina */
+    background-color: #f9f1f0; /* Colore chiaro di sfondo per la pagina */
     color: #333; /* Colore scuro per il testo */
     margin: 0;
     padding: 0;
@@ -272,7 +272,7 @@ body {
 
 /* Hero Section */
 header.hero {
-    background-color: #f4f4f4; /* Colore di sfondo chiaro per l'header */
+    background-color: #2D286E; /* Colore di sfondo chiaro per l'header */
     background-image: url('./assets/vintage-texture.png'); /* Immagine di sfondo con texture vintage */
     background-size: cover; /* Fa sì che l'immagine di sfondo copra tutta l'area */
     background-position: center; /* Posiziona l'immagine al centro */
@@ -307,7 +307,7 @@ header.hero {
 /* Logo */
 .hero .logo a {
     font-size: 2.5rem; /* Grandezza del logo ridotta */
-    color: #333; /* Colore scuro per il logo */
+    color: #FCFCFC; /* Colore scuro per il logo */
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 2px;
@@ -316,7 +316,7 @@ header.hero {
 }
 
 .hero .logo a:hover {
-    color: #3498db; /* Colore luminoso al passaggio del mouse */
+    color: #D39888; /* Colore luminoso al passaggio del mouse */
     transform: scale(1.1); /* Leggera animazione */
 }
 
@@ -330,7 +330,7 @@ header.hero {
 
 .menu-item {
     font-size: 1.1rem; /* Dimensione del font ridotta */
-    color: #333; /* Colore scuro per il testo */
+    color: #F1CFB8; /* Colore scuro per il testo */
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
@@ -345,14 +345,14 @@ header.hero {
     left: 0;
     width: 100%;
     height: 2px;
-    background: #3498db; /* Colore sottolineatura */
+    background: #925B52; /* Colore sottolineatura */
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease;
 }
 
 .menu-item:hover {
-    color: #3498db; /* Colore luminoso al passaggio del mouse */
+    color:#B8706E; /* Colore luminoso al passaggio del mouse */
 }
 
 .menu-item:hover::after {
@@ -361,7 +361,7 @@ header.hero {
 
 /* Menu item attivo */
 .menu-item.active {
-    color: #3498db; /* Colore per l'elemento attivo */
+    color: #343D90; /* Colore per l'elemento attivo */
     font-weight: 700;
 }
 
@@ -761,7 +761,7 @@ header.hero {
 .row {
     display: flex;
     flex-direction: row; /* Disposizione orizzontale */
-    background-color: #e4e4e4; /* Grigio chiaro sfumato */
+    background-color: #23164D; /* Grigio chiaro sfumato */
     padding: 20px; /* Spazio interno */
     border-radius: 8px; /* Bordo arrotondato */
     box-shadow: inset 0 0 5px rgba(150, 150, 150, 0.1); /* Ombreggiatura interna sottile con tonalità grigia */
@@ -963,9 +963,10 @@ body {
     justify-content: flex-start;
     align-items:center;
     gap: 20px;
+    
 }
-.content-box, .content, .content-second {
-    background-color: #f0f0f0; /* Grigio chiaro come sfondo */
+.content {
+    background-color: #D8AFAB; /* Grigio chiaro come sfondo */
     border: 1px solid #d3d3d3; /* Bordo grigio chiaro */
     padding: 15px; /* Padding per dare spazio interno */
     margin-bottom: 20px; /* Spazio tra i rettangoli */
