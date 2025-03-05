@@ -3,8 +3,8 @@
     --secondary: #23164D;
     --accent: #2D286E;
     --background: #FCFCFC;
-    --light-accent: #C58F83;
-    --highlight: #D39888;
+    --light-accent: #d4b9b3;
+    --highlight: #d4c3bf;
     --soft-accent: #F1CFB8;
     --highlight-dark: #B8706E;
     --secondary-dark: #925B52;
@@ -966,7 +966,7 @@ body {
     
 }
 .content {
-    background-color: #D8AFAB; /* Grigio chiaro come sfondo */
+    background-color: #b4a18f; /* Grigio chiaro come sfondo */
     border: 1px solid #d3d3d3; /* Bordo grigio chiaro */
     padding: 15px; /* Padding per dare spazio interno */
     margin-bottom: 20px; /* Spazio tra i rettangoli */
