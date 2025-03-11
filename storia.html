@@ -4,139 +4,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Storia di Esperia</title>
+    <meta name="description" content="Storia dell'Esperia - Progetto Paleohistory">
 
-    <!-- Collegamenti ai font e CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="final_style.css">
 
-    <!-- Favicon -->
     <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
 
+    <title>Storia di Esperia</title>
+
     <style>
-        /* Stile migliorato per la leggibilità */
-        .text-box {
+        /* Titolo principale che occupa tutta la riga, centrato */
+        .title_index {
+            font-size: 2rem;
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            color: #343D90;
+            text-align: center;
+        }
+
+        /* Contenitore delle immagini e del testo */
+        .section-container.flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
             background-color: #f0f0f0;
-            padding: 15px;
             border-radius: 8px;
             margin-bottom: 20px;
         }
 
-        /* Link di salto per migliorare la navigazione da tastiera */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 10px;
-            background: #000;
-            color: white;
-            padding: 8px;
-            z-index: 100;
+        /* Contenitore senza bordi */
+        .section-container.flex.no-border {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: none;
         }
 
-        .skip-link:focus {
-            top: 10px;
+        .section-container.flex img {
+            width: 30%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin-top: 0;
+        }
+
+        .section-container.flex .text-content {
+            flex: 1;
+            text-align: justify;
+        }
+
+        .section-container.flex h2 {
+            font-size: 2rem;
+            color: #343D90;
+            margin-bottom: 10px;
+            padding: 15px;
+            border: 2px solid #343D90;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Titolo largo */
+        .section-container.flex h2.title-fullwidth {
+            border: 2px solid #343D90;
+            background-color: #f5f5f5;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+            font-size: 2rem;
         }
     </style>
 </head>
 
 <body>
-    <!-- Link per saltare direttamente al contenuto principale -->
-    <a href="#contenuto" class="skip-link">Salta al contenuto</a>
-
     <div class="safe-area spaced-column">
-        <header class="hero" role="banner">
+        <header class="hero">
             <div class="hero-content">
                 <div class="logo">
-                    <a href="./home.html">Esperia</a>
+                    <a href="./home.html">ESPERIA</a>
                 </div>
-                <nav class="menu" role="navigation" aria-label="Menu principale">
+                <nav class="menu">
                     <a class="menu-item" href="./home.html">Home</a>
-                    <a class="menu-item active" href="./storia.html" aria-current="page">Storia</a>
+                    <a class="menu-item active" href="./storia.html">Storia</a>
                     <a class="menu-item" href="./auto_esperia.html">Auto Esperia</a>
                     <a class="menu-item" href="./curiosità.html">Curiosità</a>
                 </nav>
             </div>
         </header>
 
-        <main id="contenuto" role="main">
+        <div class="content">
             <section>
-                <h1 style="color: #925b52;"><b>La storia dell'Esperia</b></h1>
+                <h1 class="title_index">La storia dell'Esperia</h1>
             </section>
 
-            <section class="centrato">
-                <h2 style="color: #343d90;"><b>L'Esperia: simbolo dell'ambizione industriale italiana e delle difficoltà del settore automobilistico</b></h2>
-            </section>
-            <section class="content-second text-box">
-                <img src="./assets/tesserino2.jpg" class="img-right" alt="L'immagine rappresenta un cartello della S.A.L.">
-                <p style="line-height: 1.8;text-align: justify;margin-right:20px">
-                    La S.A.L., inizialmente produttrice di omnibus e motori marini, trovò la sua identità nel settore
-                    automobilistico con il modello Esperia, un'auto innovativa e di alta qualità, pensata per competere con
-                    le grandi case automobilistiche internazionali. Nonostante le sue prestazioni avanzate e il design
-                    raffinato, l'azienda affrontò gravi difficoltà, tra cui la concorrenza estera, la mancanza di capitali e
-                    una rete di distribuzione limitata. La crisi economica e la difficoltà nell'espandersi portarono infine
-                    al declino e alla chiusura della S.A.L., nonostante la validità dei suoi prodotti.
-                                </p>
-                <img src="./assets/Foto Macchina Esperia PO.jpg" class="img-right" alt="L'immagine rappresenta un modello della macchina Esperia">
-            </section>
+            <!-- Primo blocco con titolo, testo e immagini -->
+            <div class="section-container flex-no-margin">
+                <h2 class="title_index"><b>L'Esperia: simbolo dell'ambizione industriale italiana e delle difficoltà del settore automobilistico</b></h2>
+            </div>
+            <div class="section-container flex">
+                <div class="text-content">
+                    <p>
+                        La S.A.L., inizialmente produttrice di omnibus e motori marini, trovò la sua identità nel settore automobilistico con il modello Esperia, un'auto innovativa e di alta qualità, pensata per competere con le grandi case automobilistiche internazionali. Nonostante le sue prestazioni avanzate e il design raffinato, l'azienda affrontò gravi difficoltà, tra cui la concorrenza estera, la mancanza di capitali e una rete di distribuzione limitata. La crisi economica e la difficoltà nell'espandersi portarono infine al declino e alla chiusura della S.A.L., nonostante la validità dei suoi prodotti.
+                    </p>
+                </div>
+                <img src="./assets/tesserino2.jpg" alt="Cartello della S.A.L.">
+                <img src="./assets/Foto Macchina Esperia PO.jpg" alt="Modello della macchina Esperia">
+            </div>
 
-            <section class="centrato">
-                <h2 style="color: #23164d;"><b>La S.A.L.: dal declino industriale alla rinascita attraverso la formazione tecnica</b></h2>
-            </section>
+            <!-- Secondo blocco -->
+            <div class="section-container flex-no-margin">
+                <h2 class="title_index"><b>La S.A.L.: dal declino industriale alla rinascita attraverso la formazione tecnica</b></h2>
+            </div>
+            <div class="section-container flex">
+                <div class="text-content">
+                    <p>
+                        Nel 1909, a causa di difficoltà economiche e di mercato, la S.A.L. fu costretta a liquidarsi e venne acquisita dall’imprenditore Giovanni Macagno. Sotto la sua guida, l’azienda cercò di rilanciarsi con nuovi modelli di automobili, come il 20/24 HP e il 40/50 HP, che si distinguevano per soluzioni tecniche avanzate come i motori monoblocco e la trasmissione cardanica.
+                        Nonostante gli sforzi per modernizzare la produzione e competere con le case automobilistiche più affermate, il rilancio non ebbe successo a causa della forte concorrenza, dell’instabilità economica e delle difficoltà legate allo sviluppo di un'industria automobilistica giovane in Italia. Nel 1913, la S.A.L. chiuse definitivamente.
+                    </p>
+                </div>
+                <img src="./assets/fabbrica.png" alt="La fabbrica Esperia in attività">
+            </div>
 
-            <section class="content-second text-box">
-                <img src="./assets/fabbrica.png" class="img-right" alt="L'immagine rappresenta la fabbrica Esperia quando ancora era in attività">
-                <p style="line-height: 1.8; text-align: justify;">
-                    Nel 1909, a causa di difficoltà economiche e di mercato, la S.A.L. fu costretta a liquidarsi e venne
-                    acquisita dall’imprenditore Giovanni Macagno. Sotto la sua guida, l’azienda cercò di rilanciarsi con
-                    nuovi modelli di automobili, come il 20/24 HP e il 40/50 HP, che si distinguevano per soluzioni tecniche
-                    avanzate come i motori monoblocco e la trasmissione cardanica. Nonostante gli sforzi per modernizzare la
-                    produzione e competere con le case automobilistiche più affermate, il rilancio non ebbe successo a causa
-                    della forte concorrenza, dell’instabilità economica e delle difficoltà legate allo sviluppo di
-                    un'industria automobilistica giovane in Italia. Nel 1913, la S.A.L. chiuse definitivamente.
-    
-                    Tuttavia, la sua eredità non svanì. L’area industriale un tempo occupata dalla fabbrica fu trasformata
-                    in un importante istituto educativo: l'Istituto Tecnico Industriale Pietro Paleocapa (ITIS). Questa
-                    scelta, oltre a onorare la tradizione manifatturiera di Bergamo, rappresentò un segno di continuità con
-                    il passato industriale, puntando sulla formazione tecnica delle future generazioni. L’ITIS divenne un
-                    punto di riferimento per la preparazione di tecnici e ingegneri, con percorsi di studio che riflettevano
-                    le attività industriali legate alla S.A.L. Il nome Esperia, scelto per l'istituto, non fu solo un
-                    omaggio al marchio automobilistico scomparso, ma un simbolo di una tradizione industriale che, pur
-                    cambiando forma, non si era mai spenta, continuando a ispirare e a contribuire allo sviluppo tecnologico
-                    e culturale della città.
-                </p>
-            </section>
+            <!-- Terzo blocco -->
+            <div class="section-container flex-no-margin">
+                <h2 class="title_index"><b>Esperia: Un simbolo di progresso e tradizione nell'Industria Automobilistica Italiana</b></h2>
+            </div>
+            <div class="section-container flex">
+                <div class="text-content">
+                    <p>
+                        L'Istituto "Pietro Paleocapa" continua oggi a rappresentare un'eccellenza nel settore della formazione tecnica, preparando ogni anno centinaia di studenti ad affrontare il mondo del lavoro con competenze avanzate e una solida preparazione tecnologica. Questo legame tra industria e istruzione, tra passato e presente, dimostra come la storia di un'azienda possa trasformarsi e diventare parte integrante della cultura e dello sviluppo di una comunità.
+                    </p>
+                </div>
+                <img src="./assets/museo.jpg" alt="Museo TIME della scuola Pietro Paleocapa">
+            </div>
+        </div>
 
-            <section class="centrato">
-                <h2 style="color: #2d286e;"><b>Esperia: un simbolo di progresso e tradizione a Bergamo</b></h2>
-            </section>
-            <section class="content-second text-box">
-                <img src="./assets/museo.jpg" class="img-left" alt="L'immagine rappresenta il museo Time della scuola Pietro Paleocapa">
-                <p style="line-height: 1.8; text-align: justify;">
-             L'Istituto "Pietro Paleocapa" continua oggi a rappresentare un'eccellenza nel settore della formazione
-                tecnica, preparando ogni anno centinaia di studenti ad affrontare il mondo del lavoro con competenze
-                avanzate e una solida preparazione tecnologica. Questo legame tra industria e istruzione, tra passato e
-                presente, dimostra come la storia di un'azienda possa trasformarsi e diventare parte integrante della
-                cultura e dello sviluppo di una comunità. Sebbene la produzione della S.A.L. e delle sue automobili si
-                sia interrotta oltre un secolo fa, il suo spirito innovativo continua a vivere attraverso la formazione
-                delle nuove generazioni, testimoniando il valore della memoria industriale come elemento fondante della
-                crescita e del progresso.
-                Il nome "Esperia", originariamente associato all'istituto tecnico, ha acquisito un significato più
-                ampio, diventando un simbolo di progresso, innovazione e connessione tra tradizione e modernità a
-                Bergamo. La sua eredità è oggi un patrimonio vivo che ispira e alimenta lo sviluppo tecnologico. Non è
-                solo un ricordo del passato, ma un esempio di come l'eccellenza tecnica possa plasmare il futuro,
-                promuovendo formazione, ricerca e innovazione. "Esperia" rappresenta un ponte tra epoche diverse,
-                riflettendo l'ambizione di costruire un futuro di progresso e di eccellenza.
-                                </p>
-            </section>
-        </main>
-
-        <footer class="footer" role="contentinfo">
+        <footer class="footer">
             <div class="footer-content">
                 <p>&copy; 2025 Auto Esperia</p>
                 <p class="footer-link"><a href="#">Privacy Policy</a></p>
