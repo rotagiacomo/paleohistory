@@ -3,13 +3,15 @@
     --secondary: #23164D;
     --accent: #2D286E;
     --background: #FCFCFC;
-    --light-accent: #d4b9b3;
-    --highlight: #d4c3bf;
+    --light-accent: #C58F83;
+    --highlight: #D39888;
     --soft-accent: #F1CFB8;
     --highlight-dark: #B8706E;
     --secondary-dark: #925B52;
-    --josh: #343D90; /* Dark blue */
-    --lily: #3498db; /* Light blue */
+    --josh: #0c0b0b;
+    /* Dark blue */
+    --lily: #3498db;
+    /* Light blue */
 }
 
 * {
@@ -111,7 +113,8 @@ main {
 
 .items-container .sketchfab-embed-wrapper {
     flex: 1;
-    min-width: 48%; /* Affiancamento a 48% per dare più spazio */
+    min-width: 48%;
+    /* Affiancamento a 48% per dare più spazio */
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -121,15 +124,18 @@ main {
 
 .items-container .sketchfab-embed-wrapper:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Ombra maggiore al passaggio del mouse */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    /* Ombra maggiore al passaggio del mouse */
 }
 
 /* Per gli iframe */
 .items-container iframe {
     width: 100%;
-    height: 500px; /* Altezza fissata a 500px per miglior visibilità */
+    height: 500px;
+    /* Altezza fissata a 500px per miglior visibilità */
     border: none;
-    border-radius: 15px; /* Arrotondamento angoli */
+    border-radius: 15px;
+    /* Arrotondamento angoli */
 }
 
 /* Footer */
@@ -156,13 +162,15 @@ footer {
     header.hero {
         height: 50vh;
     }
+
     .hero .logo a {
         font-size: 2rem;
     }
+
     .menu-item {
         font-size: 1rem;
     }
-    
+
     /* Cambia il layout in colonna sui dispositivi mobili */
     .items-container {
         flex-direction: column;
@@ -170,32 +178,44 @@ footer {
     }
 
     .items-container .sketchfab-embed-wrapper {
-        min-width: 100%; /* Ogni modello occupa tutta la larghezza su mobile */
+        min-width: 100%;
+        /* Ogni modello occupa tutta la larghezza su mobile */
     }
 
     .items-container iframe {
-        height: 400px; /* Riduci l'altezza sugli schermi piccoli */
+        height: 400px;
+        /* Riduci l'altezza sugli schermi piccoli */
     }
 }
 
 
 :root {
-    --primary: #343D90; /* Dark Blue */
-    --secondary: #23164D; /* Deep Purple */
-    --accent: #2D286E; /* Dark Purple */
-    --background: #FCFCFC; /* Light Grey */
-    --light-accent: #C58F83; /* Light Brown */
-    --highlight: #D39888; /* Peachy Pink */
-    --soft-accent: #F1CFB8; /* Soft Beige */
-    --highlight-dark: #B8706E; /* Muted Red */
-    --secondary-dark: #925B52; /* Brown */
+    --primary: #343D90;
+    /* Dark Blue */
+    --secondary: #23164D;
+    /* Deep Purple */
+    --accent: #2D286E;
+    /* Dark Purple */
+    --background: #FCFCFC;
+    /* Light Grey */
+    --light-accent: #C58F83;
+    /* Light Brown */
+    --highlight: #D39888;
+    /* Peachy Pink */
+    --soft-accent: #F1CFB8;
+    /* Soft Beige */
+    --highlight-dark: #B8706E;
+    /* Muted Red */
+    --secondary-dark: #925B52;
+    /* Brown */
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Georgia", serif; /* Modifica il font a Georgia */
+    font-family: "Georgia", serif;
+    /* Modifica il font a Georgia */
 }
 
 body {
@@ -203,12 +223,20 @@ body {
     color: var(--josh);
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     color: var(--josh);
     font-weight: normal;
 }
 
-a, a:visited, a:focus {
+a,
+a:visited,
+a:focus {
     text-decoration: none;
     color: var(--josh);
 }
@@ -264,25 +292,34 @@ footer::after {
 /* Corpo della pagina */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f9f1f0; /* Colore chiaro di sfondo per la pagina */
-    color: #333; /* Colore scuro per il testo */
+    background-color: #C3C6BD;
+    /* Colore chiaro di sfondo per la pagina */
+    color: #333;
+    /* Colore scuro per il testo */
     margin: 0;
     padding: 0;
 }
 
 /* Hero Section */
 header.hero {
-    background-color: #2D286E; /* Colore di sfondo chiaro per l'header */
-    background-image: url('./assets/vintage-texture.png'); /* Immagine di sfondo con texture vintage */
-    background-size: cover; /* Fa sì che l'immagine di sfondo copra tutta l'area */
-    background-position: center; /* Posiziona l'immagine al centro */
-    height: 60vh; /* Altezza dell'header */
+    background-color: #747e96;
+    /* Colore di sfondo chiaro per l'header */
+    background-image: url('./assets/vintage-texture.png');
+    /* Immagine di sfondo con texture vintage */
+    background-size: cover;
+    /* Fa sì che l'immagine di sfondo copra tutta l'area */
+    background-position: center;
+    /* Posiziona l'immagine al centro */
+    height: 60vh;
+    /* Altezza dell'header */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    color: #333; /* Colore scuro per il testo */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Ombra leggera per profondità */
+    color: #333;
+    /* Colore scuro per il testo */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Ombra leggera per profondità */
     z-index: 0;
 }
 
@@ -294,7 +331,8 @@ header.hero {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Sovrapposizione trasparente scura */
+    background: rgba(0, 0, 0, 0.3);
+    /* Sovrapposizione trasparente scura */
     z-index: -1;
 }
 
@@ -306,8 +344,10 @@ header.hero {
 
 /* Logo */
 .hero .logo a {
-    font-size: 2.5rem; /* Grandezza del logo ridotta */
-    color: #FCFCFC; /* Colore scuro per il logo */
+    font-size: 2.5rem;
+    /* Grandezza del logo ridotta */
+    color: #E5E5E5;
+    /* Colore scuro per il logo */
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 2px;
@@ -316,21 +356,27 @@ header.hero {
 }
 
 .hero .logo a:hover {
-    color: #D39888; /* Colore luminoso al passaggio del mouse */
-    transform: scale(1.1); /* Leggera animazione */
+    color: #87a96b;
+    /* Colore luminoso al passaggio del mouse */
+    transform: scale(1.1);
+    /* Leggera animazione */
 }
 
 /* Menu */
 .hero .menu {
     display: flex;
     justify-content: center;
-    margin-top: 1.5rem; /* Distanza più contenuta */
-    gap: 1.5rem; /* Distanza tra i menu item più ridotta */
+    margin-top: 1.5rem;
+    /* Distanza più contenuta */
+    gap: 1.5rem;
+    /* Distanza tra i menu item più ridotta */
 }
 
 .menu-item {
-    font-size: 1.1rem; /* Dimensione del font ridotta */
-    color: #F1CFB8; /* Colore scuro per il testo */
+    font-size: 1.1rem;
+    /* Dimensione del font ridotta */
+    color: #333;
+    /* Colore scuro per il testo */
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
@@ -345,49 +391,64 @@ header.hero {
     left: 0;
     width: 100%;
     height: 2px;
-    background: #925B52; /* Colore sottolineatura */
+    background: #87a96b;
+    /* Colore sottolineatura */
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease;
 }
 
 .menu-item:hover {
-    color:#B8706E; /* Colore luminoso al passaggio del mouse */
+    color: #87a96b;
+    /* Colore luminoso al passaggio del mouse */
 }
 
 .menu-item:hover::after {
-    transform: scaleX(1); /* Effetto di sottolineatura dinamica */
+    transform: scaleX(1);
+    /* Effetto di sottolineatura dinamica */
 }
 
 /* Menu item attivo */
 .menu-item.active {
-    color: #343D90; /* Colore per l'elemento attivo */
+    color: #87a96b;
+    /* Colore per l'elemento attivo */
     font-weight: 700;
 }
 
 /* Sezione con contenuti principali */
 .testo-principale {
     padding: 2rem;
-    background-color: #f4f4f4; /* Colore di sfondo chiaro */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombra morbida per la profondità */
+    background-color: #f4f4f4;
+    /* Colore di sfondo chiaro */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Ombra morbida per la profondità */
     border-radius: 12px;
     max-width: 900px;
     margin: 3rem auto;
     text-align: center;
-    background-image: url('./assets/vintage-texture.png'); /* Immagine di sfondo con texture vintage */
-    background-size: cover; /* Assicura che l'immagine copra l'intera sezione */
-    position: relative; /* Necessario per il posizionamento della sovrapposizione */
+    background-image: url('./assets/vintage-texture.png');
+    /* Immagine di sfondo con texture vintage */
+    background-size: cover;
+    /* Assicura che l'immagine copra l'intera sezione */
+    position: relative;
+    /* Necessario per il posizionamento della sovrapposizione */
 }
- 
+
 /* Footer */
 .footer {
-    background-color: #333333; /* Colore di sfondo scuro */
-    color: #f4f4f4; /* Colore chiaro per il testo */
-    padding: 40px 0; /* Aumento dello spazio */
+    background-color: #333333;
+    /* Colore di sfondo scuro */
+    color: #f4f4f4;
+    /* Colore chiaro per il testo */
+    padding: 40px 0;
+    /* Aumento dello spazio */
     text-align: center;
-    font-family: 'Georgia', serif; /* Font classico */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra morbida per la profondità */
-    border-top: 2px solid #444444; /* Linea superiore per separare il footer dal contenuto */
+    font-family: 'Georgia', serif;
+    /* Font classico */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Ombra morbida per la profondità */
+    border-top: 2px solid #444444;
+    /* Linea superiore per separare il footer dal contenuto */
 }
 
 .footer-content {
@@ -398,37 +459,52 @@ header.hero {
 
 /* Testo del footer */
 .footer p {
-    margin: 0; /* Rimuovi il margine dai paragrafi */
-    font-size: 16px; /* Dimensione del font leggermente ridotta */
-    color: #f4f4f4; /* Colore chiaro per il testo */
-    letter-spacing: 1px; /* Distanza tra le lettere per la leggibilità */
+    margin: 0;
+    /* Rimuovi il margine dai paragrafi */
+    font-size: 16px;
+    /* Dimensione del font leggermente ridotta */
+    color: #f4f4f4;
+    /* Colore chiaro per il testo */
+    letter-spacing: 1px;
+    /* Distanza tra le lettere per la leggibilità */
 }
 
 /* Link nel footer */
 .footer-link a {
-    color: #3498db; /* Colore dei link chiaro (blu) */
-    text-decoration: none; /* Rimuovi la sottolineatura */
-    font-weight: bold; /* Font più audace */
-    font-size: 14px; /* Dimensione del font più piccola */
-    letter-spacing: 1px; /* Distanza tra le lettere */
-    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease; /* Transizioni per l'effetto hover */
+    color: #3498db;
+    /* Colore dei link chiaro (blu) */
+    text-decoration: none;
+    /* Rimuovi la sottolineatura */
+    font-weight: bold;
+    /* Font più audace */
+    font-size: 14px;
+    /* Dimensione del font più piccola */
+    letter-spacing: 1px;
+    /* Distanza tra le lettere */
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+    /* Transizioni per l'effetto hover */
 }
 
 .footer-link a:hover {
-    color: #2c3e50; /* Colore più scuro al passaggio del mouse */
-    transform: scale(1.1); /* Leggero ingrandimento del testo */
-    letter-spacing: 2px; /* Maggiore distanza tra le lettere al passaggio del mouse */
+    color: #2c3e50;
+    /* Colore più scuro al passaggio del mouse */
+    transform: scale(1.1);
+    /* Leggero ingrandimento del testo */
+    letter-spacing: 2px;
+    /* Maggiore distanza tra le lettere al passaggio del mouse */
 }
 
 
 .testo-principale h3 {
     font-size: 2.5rem;
-    color: #333; /* Colore scuro per il titolo */
+    color: #333;
+    /* Colore scuro per il titolo */
 }
 
 .testo-principale p {
     font-size: 1.125rem;
-    color: #333; /* Colore del testo */
+    color: #333;
+    /* Colore del testo */
     line-height: 1.8;
     font-weight: 300;
     margin-top: 1.5rem;
@@ -518,7 +594,7 @@ header.hero {
     display: none;
 }
 
-.list-item:hover + .descrizione {
+.list-item:hover+.descrizione {
     display: block;
 }
 
@@ -578,13 +654,19 @@ header.hero {
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, #2c2c2c, #555555); /* Gradiente grigio scuro a grigio più chiaro */
-    color: #f4f4f4; /* Colore chiaro per il testo */
-    padding: 40px 0; /* Aumento dello spazio */
+    background: linear-gradient(135deg, #2c2c2c, #555555);
+    /* Gradiente grigio scuro a grigio più chiaro */
+    color: #f4f4f4;
+    /* Colore chiaro per il testo */
+    padding: 40px 0;
+    /* Aumento dello spazio */
     text-align: center;
-    font-family: 'Georgia', serif; /* Font classico */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra morbida per la profondità */
-    border-top: 2px solid #444444; /* Linea superiore per separare il footer dal contenuto */
+    font-family: 'Georgia', serif;
+    /* Font classico */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Ombra morbida per la profondità */
+    border-top: 2px solid #444444;
+    /* Linea superiore per separare il footer dal contenuto */
 }
 
 .footer-content {
@@ -595,26 +677,39 @@ header.hero {
 
 /* Testo del footer */
 .footer p {
-    margin: 0; /* Rimuovi il margine dai paragrafi */
-    font-size: 16px; /* Dimensione del font leggermente ridotta */
-    color: #f4f4f4; /* Colore chiaro per il testo */
-    letter-spacing: 1px; /* Distanza tra le lettere per la leggibilità */
+    margin: 0;
+    /* Rimuovi il margine dai paragrafi */
+    font-size: 16px;
+    /* Dimensione del font leggermente ridotta */
+    color: #f4f4f4;
+    /* Colore chiaro per il testo */
+    letter-spacing: 1px;
+    /* Distanza tra le lettere per la leggibilità */
 }
 
 /* Link nel footer */
 .footer-link a {
-    color: #3498db; /* Colore dei link chiaro (blu) */
-    text-decoration: none; /* Rimuovi la sottolineatura */
-    font-weight: bold; /* Font più audace */
-    font-size: 14px; /* Dimensione del font più piccola */
-    letter-spacing: 1px; /* Distanza tra le lettere */
-    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease; /* Transizioni per l'effetto hover */
+    color: #3498db;
+    /* Colore dei link chiaro (blu) */
+    text-decoration: none;
+    /* Rimuovi la sottolineatura */
+    font-weight: bold;
+    /* Font più audace */
+    font-size: 14px;
+    /* Dimensione del font più piccola */
+    letter-spacing: 1px;
+    /* Distanza tra le lettere */
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+    /* Transizioni per l'effetto hover */
 }
 
 .footer-link a:hover {
-    color: #3498db; /* Colore più scuro al passaggio del mouse */
-    transform: scale(1.1); /* Leggero ingrandimento del testo */
-    letter-spacing: 2px; /* Maggiore distanza tra le lettere al passaggio del mouse */
+    color: #3498db;
+    /* Colore più scuro al passaggio del mouse */
+    transform: scale(1.1);
+    /* Leggero ingrandimento del testo */
+    letter-spacing: 2px;
+    /* Maggiore distanza tra le lettere al passaggio del mouse */
 }
 
 
@@ -623,33 +718,35 @@ header.hero {
 .testo-principale {
     padding: 2rem;
     background-color: #f4f4f4;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombra morbida ma non invadente */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Ombra morbida ma non invadente */
     border-radius: 12px;
     max-width: 900px;
     margin: 3rem auto;
     text-align: center;
-    background-image: url('./assets/vintage-texture.png'); /* Texture vintage (opzionale) */
+    background-image: url('./assets/vintage-texture.png');
+    /* Texture vintage (opzionale) */
     background-size: cover;
-    position: relative; /* Necessario per il posizionamento */
+    position: relative;
+    /* Necessario per il posizionamento */
 }
 
 /* Title Styles */
 .section-title {
     font-size: 3rem;
     font-weight: 700;
-    color: #3F6634; /* Verde scuro per il titolo */
     margin-bottom: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding-bottom: 1rem;
     display: inline-block;
     position: relative;
+    color: #343D90;
 }
 
 /* Text Styles */
 .section-text {
     font-size: 1.125rem;
-    color: #345511; /* Verde scuro per il testo */
     line-height: 1.8;
     font-weight: 300;
     margin-top: 1.5rem;
@@ -657,27 +754,30 @@ header.hero {
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
-    letter-spacing: 0.5px; /* Piccola spaziatura per un look più elegante */
+    letter-spacing: 0.5px;
+    /* Piccola spaziatura per un look più elegante */
 }
 
 /* Rimuoviamo l'effetto hover e lo stile di illuminazione */
 .testo-principale:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombra morbida ma invariata */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Ombra morbida ma invariata */
 }
 
 .section-title:hover {
-    transform: none; /* Rimuoviamo il movimento del titolo */
-    color: #3F6634; /* Manteniamo il colore del titolo invariato */
+    transform: none;
+    /* Rimuoviamo il movimento del titolo */
 }
 
 .section-text:hover {
-    color: #345511; /* Manteniamo il colore del testo invariato */
-    transition: none; /* Rimuoviamo la transizione del colore */
+    transition: none;
+    /* Rimuoviamo la transizione del colore */
 }
 
 @media (max-width: 992px) {
     header.hero {
-        height: 50vh; /* Altezza ridotta dell'header per dispositivi mobili */
+        height: 50vh;
+        /* Altezza ridotta dell'header per dispositivi mobili */
     }
 
     .hero .menu {
@@ -703,15 +803,18 @@ header.hero {
     }
 
     .testo-principale {
-        padding: 1rem; /* Ridotto il padding sui dispositivi mobili */
+        padding: 1rem;
+        /* Ridotto il padding sui dispositivi mobili */
     }
 
     .testo-principale h3 {
-        font-size: 1.8rem; /* Ridotto la dimensione del titolo sui dispositivi mobili */
+        font-size: 1.8rem;
+        /* Ridotto la dimensione del titolo sui dispositivi mobili */
     }
 
     .testo-principale p {
-        font-size: 1rem; /* Ridotto la dimensione del testo sui dispositivi mobili */
+        font-size: 1rem;
+        /* Ridotto la dimensione del testo sui dispositivi mobili */
     }
 
     .menu-item {
@@ -721,7 +824,8 @@ header.hero {
 
 @media (max-width: 480px) {
     header.hero {
-        height: 40vh; /* Altezza ulteriormente ridotta per i dispositivi più piccoli */
+        height: 40vh;
+        /* Altezza ulteriormente ridotta per i dispositivi più piccoli */
     }
 
     .hero .logo a {
@@ -760,43 +864,66 @@ header.hero {
 /* Stile per il layout a griglia */
 .row {
     display: flex;
-    flex-direction: row; /* Disposizione orizzontale */
-    background-color: #23164D; /* Grigio chiaro sfumato */
-    padding: 20px; /* Spazio interno */
-    border-radius: 8px; /* Bordo arrotondato */
-    box-shadow: inset 0 0 5px rgba(150, 150, 150, 0.1); /* Ombreggiatura interna sottile con tonalità grigia */
-    margin-bottom: 50px; /* Spazio tra le immagini */
+    flex-direction: row;
+    /* Disposizione orizzontale */
+    background-color: #e4e4e4;
+    /* Grigio chiaro sfumato */
+    padding: 20px;
+    /* Spazio interno */
+    border-radius: 8px;
+    /* Bordo arrotondato */
+    box-shadow: inset 0 0 5px rgba(150, 150, 150, 0.1);
+    /* Ombreggiatura interna sottile con tonalità grigia */
+    margin-bottom: 50px;
+    /* Spazio tra le immagini */
 }
+
 /* Stile per il Salone dell'Automobile di Parigi */
 .row-salone {
     display: flex;
-    flex-direction: row; /* Disposizione orizzontale */
-    justify-content: space-between; /* Spazio equo tra le colonne */
-    align-items: flex-start; /* Allinea tutto all'inizio verticalmente */
-    background-color: #e4e4e4; /* Grigio chiaro sfumato */
-    padding: 20px; /* Spazio interno */
-    border-radius: 8px; /* Bordo arrotondato */
-    box-shadow: inset 0 0 5px rgba(150, 150, 150, 0.1); /* Ombreggiatura interna sottile */
-    margin-bottom: 50px; /* Spazio tra le immagini */
+    flex-direction: row;
+    /* Disposizione orizzontale */
+    justify-content: space-between;
+    /* Spazio equo tra le colonne */
+    align-items: flex-start;
+    /* Allinea tutto all'inizio verticalmente */
+    background-color: #e4e4e4;
+    /* Grigio chiaro sfumato */
+    padding: 20px;
+    /* Spazio interno */
+    border-radius: 8px;
+    /* Bordo arrotondato */
+    box-shadow: inset 0 0 5px rgba(150, 150, 150, 0.1);
+    /* Ombreggiatura interna sottile */
+    margin-bottom: 50px;
+    /* Spazio tra le immagini */
 }
 
 .text-column {
-    flex: 3; /* Occupa 3/5 della larghezza */
-    padding-right: 20px; /* Spazio tra il testo e le immagini */
+    flex: 3;
+    /* Occupa 3/5 della larghezza */
+    padding-right: 20px;
+    /* Spazio tra il testo e le immagini */
     text-align: justify;
 }
 
 .image-column {
-    flex: 2; /* Occupa 2/5 della larghezza */
+    flex: 2;
+    /* Occupa 2/5 della larghezza */
     display: flex;
-    flex-direction: column; /* Disposizione verticale delle immagini */
-    align-items: center; /* Centra le immagini orizzontalmente */
+    flex-direction: column;
+    /* Disposizione verticale delle immagini */
+    align-items: center;
+    /* Centra le immagini orizzontalmente */
 }
 
 .image {
-    width: 70%; /* Adatta la larghezza delle immagini alla colonna */
-    height: auto; /* Mantieni le proporzioni */
-    margin-bottom: 50px; /* Spazio tra le immagini */
+    width: 70%;
+    /* Adatta la larghezza delle immagini alla colonna */
+    height: auto;
+    /* Mantieni le proporzioni */
+    margin-bottom: 50px;
+    /* Spazio tra le immagini */
 }
 
 
@@ -805,47 +932,64 @@ header.hero {
 /* Stile per il layout a griglia */
 .row-2 {
     display: flex;
-    flex-direction: row; /* Disposizione orizzontale */
-    justify-content: space-between; /* Spazio equo tra le colonne */
-    align-items: flex-start; /* Allinea tutto all'inizio verticalmente */
+    flex-direction: row;
+    /* Disposizione orizzontale */
+    justify-content: space-between;
+    /* Spazio equo tra le colonne */
+    align-items: flex-start;
+    /* Allinea tutto all'inizio verticalmente */
 }
 
 /* Colonna con immagine a sinistra */
 .image-column-left {
-    flex: 1; /* Occupa 1/5 della larghezza */
+    flex: 1;
+    /* Occupa 1/5 della larghezza */
     display: flex;
-    justify-content: center; /* Centra l'immagine all'interno della colonna */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    /* Centra l'immagine all'interno della colonna */
+    align-items: center;
+    /* Centra verticalmente */
 
 }
 
 /* Colonna centrale con testo */
 .text-column-center {
-    flex: 3; /* Occupa 3/5 della larghezza */
-    padding-right: 20px; /* Spazio tra il testo e le immagini */
+    flex: 3;
+    /* Occupa 3/5 della larghezza */
+    padding-right: 20px;
+    /* Spazio tra il testo e le immagini */
     text-align: justify;
 }
 
 /* Colonna con immagine a destra */
 .image-column-right {
-    flex: 1; /* Occupa 1/5 della larghezza */
+    flex: 1;
+    /* Occupa 1/5 della larghezza */
     display: flex;
-    flex-direction: column; /* Disposizione verticale delle immagini */
-    align-items: center; /* Centra le immagini orizzontalmente */
-    margin-bottom: 20px; /* Distanza tra le immagini */
+    flex-direction: column;
+    /* Disposizione verticale delle immagini */
+    align-items: center;
+    /* Centra le immagini orizzontalmente */
+    margin-bottom: 20px;
+    /* Distanza tra le immagini */
 }
 
 /* Stile per le immagini */
-.image-2{
-    width: 90%; /* Adatta la larghezza delle immagini alla colonna */
-    height: auto; /* Mantieni le proporzioni */
+.image-2 {
+    width: 90%;
+    /* Adatta la larghezza delle immagini alla colonna */
+    height: auto;
+    /* Mantieni le proporzioni */
     border-radius: 12px;
 }
 
 .image-3 {
-    width: 100%; /* Adatta la larghezza delle immagini alla colonna */
-    height: auto; /* Mantieni le proporzioni */
-    margin-bottom: 10px; /* Spazio tra le immagini */
+    width: 100%;
+    /* Adatta la larghezza delle immagini alla colonna */
+    height: auto;
+    /* Mantieni le proporzioni */
+    margin-bottom: 10px;
+    /* Spazio tra le immagini */
 }
 
 
@@ -853,62 +997,84 @@ header.hero {
 /* Stile per il layout a griglia */
 .row-2 {
     display: flex;
-    flex-direction: row; /* Disposizione orizzontale */
-    justify-content: space-between; /* Spazio equo tra le colonne */
-    align-items: flex-start; /* Allinea tutto all'inizio verticalmente */
-    background-color: #e4e4e4; /* Grigio chiaro sfumato */
-    padding: 20px; /* Spazio interno */
-    border-radius: 8px; /* Bordo arrotondato */
-    box-shadow: inset 0 0 5px rgba(150, 150, 150, 0.1); /* Ombreggiatura interna sottile con tonalità grigia */
-    margin-bottom: 50px; /* Spazio tra le immagini */
+    flex-direction: row;
+    /* Disposizione orizzontale */
+    justify-content: space-between;
+    /* Spazio equo tra le colonne */
+    align-items: flex-start;
+    /* Allinea tutto all'inizio verticalmente */
+    background-color: #e4e4e4;
+    /* Grigio chiaro sfumato */
+    padding: 20px;
+    /* Spazio interno */
+    border-radius: 8px;
+    /* Bordo arrotondato */
+    box-shadow: inset 0 0 5px rgba(150, 150, 150, 0.1);
+    /* Ombreggiatura interna sottile con tonalità grigia */
+    margin-bottom: 50px;
+    /* Spazio tra le immagini */
 }
 
 /* Colonna con immagine a sinistra */
 .image-column-left {
-    flex: 1; /* Occupa 1/5 della larghezza */
+    flex: 1;
+    /* Occupa 1/5 della larghezza */
     display: flex;
-    justify-content: center; /* Centra l'immagine all'interno della colonna */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    /* Centra l'immagine all'interno della colonna */
+    align-items: center;
+    /* Centra verticalmente */
 
 }
 
 /* Colonna centrale con testo */
 .text-column-center {
-    flex: 3; /* Occupa 3/5 della larghezza */
-    padding: 0 10px; /* Aggiunge spazio tra il testo e le immagini */
+    flex: 3;
+    /* Occupa 3/5 della larghezza */
+    padding: 0 10px;
+    /* Aggiunge spazio tra il testo e le immagini */
     text-align: justify;
 
 }
 
 .image-column-right {
-    flex: 1; /* Occupa 1/5 della larghezza */
+    flex: 1;
+    /* Occupa 1/5 della larghezza */
     display: flex;
-    flex-direction: column; /* Disposizione verticale delle immagini */
-    align-items: center; /* Centra le immagini orizzontalmente */
-    gap: 70px; /* Spazio tra le immagini */
+    flex-direction: column;
+    /* Disposizione verticale delle immagini */
+    align-items: center;
+    /* Centra le immagini orizzontalmente */
+    gap: 70px;
+    /* Spazio tra le immagini */
     position: relative;
 }
 
 /* Stile per le immagini */
-.image-4{
-    width: 93%; /* Adatta la larghezza delle immagini alla colonna */
-    height: auto; /* Mantieni le proporzioni */
+.image-4 {
+    width: 93%;
+    /* Adatta la larghezza delle immagini alla colonna */
+    height: auto;
+    /* Mantieni le proporzioni */
     border-radius: 12px;
-    
+
 }
 
 .titleblock-2 {
     width: 100%;
     margin-top: 1%;
     margin-bottom: 1%;
-    letter-spacing: 3px; /* Aggiunge uno spazio leggero tra le lettere */
+    letter-spacing: 3px;
+    /* Aggiunge uno spazio leggero tra le lettere */
 }
 
 /*QUI INIZIA CSS PATE*/
 /* Blocchi di titolo (Aggiornato per essere più naturali e morbidi) */
 .section-container {
-    background-color: #F0F0F0; /* Grigio uniforme */
-    border: 1px solid #D3D3D3; /*  Bordo grigio */
+    background-color: #F0F0F0;
+    /* Grigio uniforme */
+    border: 1px solid #D3D3D3;
+    /*  Bordo grigio */
     padding: 20px;
     margin: 20px 0;
     border-radius: 12px;
@@ -917,15 +1083,17 @@ header.hero {
 }
 
 .title_index {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
-    color: var(--josh);
+    color: #343D90;
     margin-bottom: 15px;
-    text-align: center; /* Centra i titoli */
-    font-family: "Georgia", serif; /* Font uniforme a Georgia */   
+    text-align: center;
+    /* Centra i titoli */
+    font-family: "Georgia", serif;
+    /* Font uniforme a Georgia */
 }
 
-p{
+p {
     line-height: 1.6;
 }
 
@@ -945,6 +1113,7 @@ h1 {
     font-size: 4rem;
     line-height: 104px;
 }
+
 body {
     color: black;
     font-family: "Roboto", sans-serif;
@@ -952,57 +1121,70 @@ body {
     margin-left: 200px;
     margin-right: 200px;
 }
+
 .img-left {
     float: left;
     margin-right: 10px;
     max-width: 30%;
     border-radius: 12px;
 }
+
 .content {
     display: flex;
     justify-content: flex-start;
-    align-items:center;
+    align-items: center;
     gap: 20px;
-    
 }
-.content {
-    background-color: #b4a18f; /* Grigio chiaro come sfondo */
-    border: 1px solid #d3d3d3; /* Bordo grigio chiaro */
-    padding: 15px; /* Padding per dare spazio interno */
-    margin-bottom: 20px; /* Spazio tra i rettangoli */
+
+.content-box,
+.content,
+.content-second {
+    background-color: #f0f0f0;
+    /* Grigio chiaro come sfondo */
+    border: 1px solid #d3d3d3;
+    /* Bordo grigio chiaro */
+    padding: 15px;
+    /* Padding per dare spazio interno */
+    margin-bottom: 20px;
+    /* Spazio tra i rettangoli */
 }
 
 .content p {
     flex: 1;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
+
 .img-right {
     max-width: 30%;
     margin-bottom: 20px;
     border-radius: 12px;
 }
+
 .content-second {
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin-top: 20px;
 }
+
 .content-second img {
-    max-width: 30%; 
+    max-width: 30%;
 }
+
 .content-second p {
     margin-left: 20px;
     flex: 1;
 }
+
 .img-costum {
     width: 5%;
-    height: 5%; 
+    height: 5%;
     margin-bottom: 20px;
     border-radius: 12px;
 }
 
 a,
 a:visited,
-a:focus{
+a:focus {
     text-decoration: none;
     color: var(--josh);
 }
@@ -1011,12 +1193,16 @@ a:focus{
     transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease, background-color 0.3s ease;
 }
 
-body, header, footer {
+body,
+header,
+footer {
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-header.hero, footer {
-    width: 100%;  /* Assicura che entrambi occupino tutta la larghezza disponibile */
+header.hero,
+footer {
+    width: 100%;
+    /* Assicura che entrambi occupino tutta la larghezza disponibile */
 }
